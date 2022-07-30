@@ -1,1 +1,8 @@
-@use './partials/setup';
+@import './base/setup';
+@import './base/base';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './partials/nav';
+@import './partials/header';
+@import './partials/main';
+@import './partials/footer';
