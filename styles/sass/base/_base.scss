@@ -1,3 +1,27 @@
 html {
   margin: 0;
+  font-size: 125%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  /* inline is the default and it would not understand height (top and bottom padding or margin) */
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
