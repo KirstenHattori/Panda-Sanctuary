@@ -223,6 +223,24 @@ template {
 
 html {
   margin: 0;
+  font-size: 125%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  /* inline is the default and it would not understand height (top and bottom padding or margin) */
+}
+
+img {
+  max-width: 100%;
 }
 
 .wrapper {
