@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Offside&display=swap);
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -247,4 +248,119 @@ img {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto;
+}
+
+h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 3.44rem;
+  line-height: 63.7px;
+  letter-spacing: 0.8px;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Offside", cursive;
+  font-weight: 400;
+  font-size: 2.1rem;
+  text-align: left;
+  color: #fff;
+}
+h2.centered {
+  text-align: center;
+}
+
+h3 {
+  font-family: "Offside", cursive;
+  font-weight: 400;
+  color: #213C28;
+}
+
+h4 {
+  font-family: "Offside", cursive;
+  font-weight: 400;
+  color: #fff;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+
+.logo {
+  font-family: "Offside", cursive;
+  line-height: 20px;
+}
+
+.readMore {
+  font-family: "Offside", cursive;
+  text-align: center;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+nav {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  text-align: right;
+  line-height: 29px;
+  color: white;
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  max-width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav li {
+  margin-left: 50px;
+}
+
+header {
+  background-image: url(../../../panda-sanctuary/assets/header-image.png);
+  top: 0;
+}
+
+h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 3.44rem;
+  line-height: 63.7px;
+  letter-spacing: 0.8px;
+  color: #fff;
+}
+
+.contact nav {
+  position: relative;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flexContainer img {
+  width: 50%;
+}
+.flexContainer .txtContainer {
+  background-color: blue;
+  width: 50%;
+  text-align: left;
 }

@@ -1,0 +1,28 @@
+nav {
+  font-family: $barlow;
+  font-weight: 700;
+  text-align: right;
+  line-height: 29px;
+  color: white;
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  max-width: 1080px;
+  display: flex;
+  
+  .flexContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  // justify-content: space-between;
+
+  ul {
+    display: flex;
+    // justify-content: flex-end;
+  }
+
+  li {
+    margin-left: 50px;
+  }
+}

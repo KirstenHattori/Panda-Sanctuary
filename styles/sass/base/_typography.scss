@@ -1,0 +1,51 @@
+h1 {
+  font-family: $barlow;
+  font-weight: 400;
+  font-size: 3.44rem;
+  line-height: 63.7px;
+  letter-spacing: 0.8px;
+  color: $white;
+}
+
+h2 {
+  font-family: $offside;
+  font-weight: 400;
+  font-size: 2.1rem;
+  text-align: left;
+  color: $white;
+  
+  &.centered {
+    text-align: center;
+  }
+}
+
+h3 {
+  font-family: $offside;
+  font-weight: 400;
+  color: $pineTwo;
+}
+
+h4 {
+  font-family: $offside;
+  font-weight: 400;
+  color: $white;
+}
+
+p {
+  font-family: $barlow;
+  font-weight:400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+
+.logo {
+  font-family: $offside;
+  line-height: 20px;
+}
+
+.readMore {
+  font-family: $offside;
+  text-align: center;
+  line-height: 29px;
+  text-transform: uppercase;
+}

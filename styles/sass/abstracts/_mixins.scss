@@ -1,4 +1,22 @@
-// @mixin offside($lineHeight) {
-//   font-family: ***offside;
-//   // how/where do I link the google fonts?
+// // @mixin offside($lineHeight) {
+// //   font-family: ***offside;
+// //   // how/where do I link the google fonts?
+// // }
+// @import url(https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Offside&display=swap);
+
+// $barlow: 'Barlow', sans-serif;
+
+// @mixin textStyle($barlow) {
+//   font-family: $barlow;
+//   font-weight: 400;
+//   font-size: 3.44rem;
+//   line-height: 63.7px;
+//   letter-spacing: 0.8px;
+// }
+
+// @mixin headings($txtColor) {
+//   font-family: $offside;
+//   font-weight: 400;
+//   font-size: 2.1rem;
+//   text-align: center;
 // }

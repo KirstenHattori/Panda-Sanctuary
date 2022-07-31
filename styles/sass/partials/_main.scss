@@ -1,0 +1,21 @@
+.contact {
+  nav {
+    position: relative;
+  }
+}
+.flexContainer {
+  display: flex;
+  img {
+    width: 50%;
+  }
+
+  .txtContainer {
+    background-color: blue;
+    width: 50%;
+    text-align: left;
+  }
+
+  // .blog {
+  //   padding: 20%;
+  // }
+}
