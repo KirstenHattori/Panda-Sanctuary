@@ -1,8 +1,8 @@
-.contact {
-  nav {
-    position: relative;
-  }
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
 }
+
 .flexContainer {
   display: flex;
   img {
@@ -18,4 +18,17 @@
   // .blog {
   //   padding: 20%;
   // }
+}
+
+
+.contactContainer {
+  display: flex;
+
+  nav {
+    position: relative;
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
