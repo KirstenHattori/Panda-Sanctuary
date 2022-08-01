@@ -2,38 +2,41 @@ nav {
   font-family: $barlow;
   font-weight: 700;
   text-align: right;
-  line-height: 29px;
+  line-height: 1.4rem;
   color: white;
   background-color: rbga(0,0,0,0);
   position: fixed;
   z-index: 999;
   top: 0;
   width: 100%;
-  max-width: 1080px;
-  display: flex;
-  text-align: right;
+  // max-width: 1080px;
+  // display: flex;
+  // text-align: right;
   
   span.logo {
-    display: block;
+    display: inline-block;
     line-height: 20px;
     width: 50px;
     overflow-wrap: normal;
   }
   
-  .flexContainer {
+  .topNav {
     display: flex;
-    justify-content: space-apart;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    // flex-wrap: wrap;
   }
   // justify-content: space-between;
 
-  ul {
-    display: flex;
-    // justify-content: flex-end;
-  }
+  // ul {
+  //   display: flex;
+  //   // justify-content: flex-end;
+  // }
 
-  li {
-    margin-left: 50px;
+  ul.pageAnchors {
+    display: flex;
+    li{
+      margin-left: 50px;
+    }
   }
 
 }

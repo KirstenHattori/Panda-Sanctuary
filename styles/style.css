@@ -283,7 +283,7 @@ h2.centered {
 h3 {
   font-family: "Offside", cursive;
   font-weight: 400;
-  color: #213C28;
+  color: #116500;
 }
 
 h4 {
@@ -316,47 +316,41 @@ p {
   text-align: center;
   line-height: 29px;
   text-transform: uppercase;
+  color: #116500;
 }
 
 nav {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   text-align: right;
-  line-height: 29px;
+  line-height: 1.4rem;
   color: white;
   background-color: rbga(0, 0, 0, 0);
   position: fixed;
   z-index: 999;
   top: 0;
   width: 100%;
-  max-width: 1080px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: right;
 }
 nav span.logo {
-  display: block;
+  display: inline-block;
   line-height: 20px;
   width: 50px;
   overflow-wrap: normal;
 }
-nav .flexContainer {
+nav .topNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-apart;
-      -ms-flex-pack: space-apart;
-          justify-content: space-apart;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-nav ul {
+nav ul.pageAnchors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-nav li {
+nav ul.pageAnchors li {
   margin-left: 50px;
 }
 
@@ -402,7 +396,9 @@ h1 {
           justify-content: space-between;
 }
 .flexContainer img {
-  width: 70%;
+  width: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
   max-width: 100%;
   height: auto;
 }
@@ -421,6 +417,22 @@ h1 {
 .about p {
   color: #2C2D2C;
 }
+.about .readMore {
+  color: #fff;
+}
+
+.aboutContainer img.square {
+  position: absolute;
+  max-width: 25%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutContainer .aboutTxt {
+  position: relative;
+  padding: 0;
+  margin-left: 30%;
+  width: 70%;
+}
 
 .gallery {
   display: -webkit-box;
@@ -434,13 +446,6 @@ h1 {
 }
 .gallery li {
   width: 31%;
-}
-
-.square {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 50px;
-  height: 50px;
 }
 
 @media (max-width: 400px) {
