@@ -344,14 +344,19 @@ nav .topNav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  max-width: 1080px;
 }
 nav ul.pageAnchors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-nav ul.pageAnchors li {
-  margin-left: 50px;
+nav ul.pageAnchors a {
+  padding-left: 40px;
 }
 
 header {

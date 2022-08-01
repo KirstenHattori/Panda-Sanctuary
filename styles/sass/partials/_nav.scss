@@ -23,6 +23,8 @@ nav {
   .topNav {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
     // flex-wrap: wrap;
   }
   // justify-content: space-between;
@@ -34,9 +36,10 @@ nav {
 
   ul.pageAnchors {
     display: flex;
-    li{
-      margin-left: 50px;
+    justify-content: space-between;
+
+    a {
+      padding-left: 40px;
     }
   }
-
 }
