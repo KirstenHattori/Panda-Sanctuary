@@ -1,7 +1,12 @@
 header {
-  background-image: url(../../../panda-sanctuary/assets/header-image.png);
-  // background-color: aqua;
-  top: 0;
+  background-image: url('../../../assets/header-image.png');
+  background-size: cover;
+  background-color: aqua;
+  // position: relative;
+  // top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -12,4 +17,11 @@ h1 {
   line-height: 63.7px;
   letter-spacing: 0.8px;
   color: $white;
+}
+.wrapper {
+  position: relative;
+}
+.socials {
+  position: absolute;
+  right: 0;
 }

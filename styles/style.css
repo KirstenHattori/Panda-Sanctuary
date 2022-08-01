@@ -225,6 +225,8 @@ template {
 html {
   margin: 0;
   font-size: 125%;
+  background-color: #2C2D2C;
+  color: #fff;
 }
 
 ul {
@@ -307,22 +309,32 @@ nav {
   text-align: right;
   line-height: 29px;
   color: white;
-  background-color: purple;
+  background-color: rbga(0, 0, 0, 0);
   position: fixed;
+  z-index: 999;
   top: 0;
-  width: 90%;
+  width: 100%;
   max-width: 1080px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: right;
+}
+nav span.logo {
+  display: block;
+  line-height: 20px;
+  width: 50px;
+  overflow-wrap: normal;
 }
 nav .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-apart;
+      -ms-flex-pack: space-apart;
+          justify-content: space-apart;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 nav ul {
   display: -webkit-box;
@@ -334,8 +346,12 @@ nav li {
 }
 
 header {
-  background-image: url(../../../panda-sanctuary/assets/header-image.png);
-  top: 0;
+  background-image: url("../../../assets/header-image.png");
+  background-size: cover;
+  background-color: aqua;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -347,6 +363,25 @@ h1 {
   color: #fff;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.socials {
+  position: absolute;
+  right: 0;
+}
+
+.about,
+.actions {
+  background-color: #D6F1E4;
+}
+
+.blog,
+.contact {
+  background-color: #213C28;
+}
+
 .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,19 +390,35 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.flexContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .flexContainer img {
-  width: 50%;
+  width: 70%;
+  max-width: 100%;
+  height: auto;
 }
 .flexContainer .txtContainer {
-  background-color: blue;
   width: 50%;
   text-align: left;
+  padding: 10% 0 10% 5%;
+}
+
+.about {
+  position: relative;
+}
+.about h2 {
+  color: #116500;
+}
+.about p {
+  color: #2C2D2C;
+}
+
+.fullBleed {
+  position: relative;
+  width: 50vw;
+  max-width: 50vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .contactContainer {
@@ -386,4 +437,29 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 400px) {
+  .flexContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 95%;
+  }
+  .fullBleed {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 0 0 0;
+  }
+  .txtContainer {
+    width: 90%;
+  }
+}
+footer {
+  text-align: center;
+}
+footer p {
+  margin: 0 auto;
+  padding: 10px;
 }

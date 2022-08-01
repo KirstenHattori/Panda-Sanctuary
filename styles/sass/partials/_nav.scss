@@ -4,16 +4,26 @@ nav {
   text-align: right;
   line-height: 29px;
   color: white;
-  background-color: purple;
+  background-color: rbga(0,0,0,0);
   position: fixed;
+  z-index: 999;
   top: 0;
-  width: 90%;
+  width: 100%;
   max-width: 1080px;
   display: flex;
+  text-align: right;
+  
+  span.logo {
+    display: block;
+    line-height: 20px;
+    width: 50px;
+    overflow-wrap: normal;
+  }
   
   .flexContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-apart;
+    flex-wrap: wrap;
   }
   // justify-content: space-between;
 
@@ -25,4 +35,5 @@ nav {
   li {
     margin-left: 50px;
   }
+
 }
