@@ -10,13 +10,19 @@ header {
 }
 
 
+// h1 {
+//   font-family: $barlow;
+//   font-weight: 400;
+//   font-size: 3.44rem;
+//   line-height: 63.7px;
+//   letter-spacing: 0.8px;
+//   color: $white;
+// }
+
 h1 {
-  font-family: $barlow;
-  font-weight: 400;
-  font-size: 3.44rem;
-  line-height: 63.7px;
-  letter-spacing: 0.8px;
-  color: $white;
+  width: 50%;
+  // line-break: normal;
+  line-height: 1.5rem;
 }
 .wrapper {
   position: relative;

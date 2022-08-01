@@ -225,8 +225,16 @@ template {
 html {
   margin: 0;
   font-size: 125%;
+  line-height: 125%;
   background-color: #2C2D2C;
   color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -284,6 +292,13 @@ h4 {
   color: #fff;
 }
 
+@media (max-width: 400px) {
+  h1,
+h2,
+h3 {
+    font-size: 1.5rem;
+  }
+}
 p {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
@@ -355,12 +370,8 @@ header {
 }
 
 h1 {
-  font-family: "Barlow", sans-serif;
-  font-weight: 400;
-  font-size: 3.44rem;
-  line-height: 63.7px;
-  letter-spacing: 0.8px;
-  color: #fff;
+  width: 50%;
+  line-height: 1.5rem;
 }
 
 .wrapper {
@@ -411,6 +422,38 @@ h1 {
   color: #2C2D2C;
 }
 
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery li {
+  width: 31%;
+}
+
+.square {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 400px) {
+  .gallery li {
+    width: 47%;
+  }
+  .gallery li:last-child {
+    width: 100%;
+  }
+  .square {
+    display: none;
+  }
+}
 .fullBleed {
   position: relative;
   width: 50vw;
@@ -421,6 +464,25 @@ h1 {
   margin-right: -50vw;
 }
 
+.actions {
+  text-align: center;
+}
+.actions ul.flexContainer {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 400px) {
+  .actions ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,10 +502,18 @@ h1 {
 }
 
 @media (max-width: 400px) {
+  .wrapper {
+    width: 90%;
+  }
   .flexContainer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 95%;
+    width: 100%;
+  }
+  .flexContainer .txtContainer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .fullBleed {
     width: 100%;
