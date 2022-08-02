@@ -400,8 +400,11 @@ h1 {
 }
 
 section {
-  border: 5px solid pink;
   padding: 20vh 0;
+}
+
+h2 {
+  margin: 20px 0;
 }
 
 .about,
@@ -418,6 +421,7 @@ section {
   text-align: center;
   padding: 10px 25px;
   background-color: #116500;
+  margin: 20px 0;
 }
 
 .blog .readMore {
@@ -468,6 +472,7 @@ section {
 }
 .aboutContainer img.square {
   position: absolute;
+  margin-top: 20px;
   max-width: 25%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -547,23 +552,49 @@ section {
             flex-direction: column;
   }
 }
+.contact .contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .contact .contactFlex div:first-child {
   width: 110%;
 }
 
+.subscribeContainer {
+  width: 100%;
+}
 .subscribeContainer .subscribe {
   height: 40px;
 }
 .subscribeContainer #email {
-  color: #2C2D2C;
   height: 45px;
   margin-right: 0;
-  border: fuchsia dashed 2px;
+  width: 30vw;
+}
+.subscribeContainer ::-webkit-input-placeholder {
+  color: #2C2D2C;
+}
+.subscribeContainer ::-moz-placeholder {
+  color: #2C2D2C;
+}
+.subscribeContainer :-ms-input-placeholder {
+  color: #2C2D2C;
+}
+.subscribeContainer ::-ms-input-placeholder {
+  color: #2C2D2C;
+}
+.subscribeContainer ::placeholder {
+  color: #2C2D2C;
 }
 .subscribeContainer .readMore {
   color: #fff;
   background-color: #2C2D2C;
   border: none;
+  margin: 0;
 }
 
 .contactContainer {
@@ -623,6 +654,10 @@ section {
   }
   .txtContainer {
     width: 90%;
+  }
+  .contactFlex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 footer {

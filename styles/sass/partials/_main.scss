@@ -1,6 +1,9 @@
 section {
-  border: 5px solid pink;
   padding: 20vh 0;
+}
+
+h2 {
+  margin: 20px 0;
 }
 
 // background colors
@@ -18,6 +21,7 @@ section {
   text-align: center;
   padding: 10px 25px;
   background-color: $deepGreen;
+  margin: 20px 0;
 }
 
 .blog .readMore {
@@ -65,7 +69,7 @@ section {
   justify-content: space-between;
   img.square {
     position: absolute;
-    
+    margin-top: 20px;
     max-width: 25%;
     object-fit: cover;
   }
@@ -167,29 +171,35 @@ section {
 // CONTACT
 .contact {
   .contactFlex {
+    display: flex;
+    justify-content: space-between;
     div:first-child {
       width: 110%;
     }
   }
 }
 .subscribeContainer {
-  // width: 60%;
+  width: 100%;
 
   .subscribe {
     height: 40px;
   }
 
   #email {
-    color: $charcoal;
     height: 45px;
     margin-right: 0;
-    border: fuchsia dashed 2px;
+    width: 30vw;
+  }
+  ::placeholder {
+    color: $charcoal;
+
   }
 
   .readMore {
     color: $white;
     background-color: $charcoal;
     border: none;
+    margin: 0;
   }
 }
 .contactContainer {
@@ -242,6 +252,10 @@ section {
 
   .txtContainer {
     width: 90%;
+  }
+
+  .contactFlex {
+    flex-wrap: wrap;
   }
 }
 
