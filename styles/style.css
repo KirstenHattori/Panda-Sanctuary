@@ -229,7 +229,6 @@ html {
   background-color: #2C2D2C;
   color: #fff;
   padding: 0;
-  margin: 0;
 }
 
 div {
@@ -260,11 +259,19 @@ img {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-size: 3.44rem;
-  line-height: 63.7px;
   letter-spacing: 0.8px;
   color: #fff;
 }
@@ -286,7 +293,8 @@ h3 {
   color: #116500;
 }
 
-h4 {
+h4,
+.contactNav a {
   font-family: "Offside", cursive;
   font-weight: 400;
   color: #fff;
@@ -299,16 +307,17 @@ h3 {
     font-size: 1.5rem;
   }
 }
-p {
+p,
+#email {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.5rem;
   letter-spacing: 0.2px;
 }
 
 .logo {
   font-family: "Offside", cursive;
-  line-height: 20px;
+  line-height: 1rem;
 }
 
 .readMore {
@@ -344,8 +353,6 @@ nav .topNav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  max-width: 1080px;
 }
 nav ul.pageAnchors {
   display: -webkit-box;
@@ -360,9 +367,9 @@ nav ul.pageAnchors a {
 }
 
 header {
-  background-image: url("../../../assets/header-image.png");
-  background-size: cover;
-  background-color: aqua;
+  background-image: url("../assets/header-image.png");
+  height: 100vh;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,7 +377,9 @@ header {
 
 h1 {
   width: 50%;
-  line-height: 1.5rem;
+  position: relative;
+  top: 100px;
+  line-height: 63.7px;
 }
 
 .wrapper {
@@ -379,7 +388,20 @@ h1 {
 
 .socials {
   position: absolute;
+  top: 100px;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section {
+  border: 5px solid pink;
+  padding: 20vh 0;
 }
 
 .about,
@@ -390,6 +412,16 @@ h1 {
 .blog,
 .contact {
   background-color: #213C28;
+}
+
+.readMore {
+  text-align: center;
+  padding: 10px 25px;
+  background-color: #116500;
+}
+
+.blog .readMore {
+  background-color: #fff;
 }
 
 .flexContainer {
@@ -426,6 +458,14 @@ h1 {
   color: #fff;
 }
 
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .aboutContainer img.square {
   position: absolute;
   max-width: 25%;
@@ -435,8 +475,8 @@ h1 {
 .aboutContainer .aboutTxt {
   position: relative;
   padding: 0;
-  margin-left: 30%;
-  width: 70%;
+  margin-left: 28%;
+  width: 75%;
 }
 
 .gallery {
@@ -464,7 +504,7 @@ h1 {
     display: none;
   }
 }
-.fullBleed {
+.blogList li:first-child .fullBleed {
   position: relative;
   width: 50vw;
   max-width: 50vw;
@@ -473,9 +513,23 @@ h1 {
   margin-left: -50vw;
   margin-right: -50vw;
 }
+.blogList li:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.blogList li:last-child .fullBleed {
+  position: relative;
+  width: 50vw;
+  max-width: 50vw;
+}
 
 .actions {
   text-align: center;
+}
+.actions i {
+  color: #2C2D2C;
 }
 .actions ul.flexContainer {
   -ms-flex-pack: distribute;
@@ -493,6 +547,25 @@ h1 {
             flex-direction: column;
   }
 }
+.contact .contactFlex div:first-child {
+  width: 110%;
+}
+
+.subscribeContainer .subscribe {
+  height: 40px;
+}
+.subscribeContainer #email {
+  color: #2C2D2C;
+  height: 45px;
+  margin-right: 0;
+  border: fuchsia dashed 2px;
+}
+.subscribeContainer .readMore {
+  color: #fff;
+  background-color: #2C2D2C;
+  border: none;
+}
+
 .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,6 +573,7 @@ h1 {
 }
 .contactContainer nav {
   position: relative;
+  width: 30%;
 }
 .contactContainer nav ul {
   display: -webkit-box;
@@ -509,6 +583,21 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.contactContainer .contactTxt {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contactContainer .contactTxt p {
+  display: inline-block;
 }
 
 @media (max-width: 400px) {

@@ -75,7 +75,7 @@
 <!-- blog -->
     <section class="blog" id="blog">
       <div class="wrapper">
-        <ul>
+        <ul class="blogList">
           <li class="flexContainer">
             <img class="fullBleed" src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.png" alt="Two small pandas laying on their stomachs next to eachother">
             <div class="txtContainer">
@@ -134,38 +134,41 @@
 
 <!-- contact -->
     <section class="contact" id="contact">
-      <div class="wrapper flexContainer">
-        <div class="subscribeContainer wrapper">
-          <h4>Stay updated</h4>
-          <p>Subscribe to our newsletter to stay updated.</p>
-          <form action="subcribe">
-            <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="email address">
-            <label for="subscribe"></label>
-            <input type="button" value="SUBSCRIBE">
-          </form>
-        </div><!-- /.subscribeContainer -->
+      <div class="wrapper">
+        <div class="contactFlex">
 
-        <div class="contactContainer wrapper">
-          <div class="contactTxt">
-            <h4>Contact</h4>
-            <div class="info">
-              <p>info@email.com</p>
-              <p>123-456-7890</p>
-              <p>123 some road, Toronto, ON</p>
-              <p>A5A 5A5, Canada</p>
-            </div>
-          </div><!-- /.contactTxt -->
-          <nav class="contactNav">
-            <ul>
-              <li><a href="#home">home</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#blog">blog</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
-          </nav><!-- /.contactNav -->
-        </div><!-- /.contactContainer -->
-        
+          <div class="subscribeContainer">
+            <h4>Stay updated</h4>
+            <p>Subscribe to our newsletter to stay updated.</p>
+            <form action="subcribe" class="subscribe">
+              <label for="email"></label>
+              <input type="email" name="email" id="email" placeholder="email address">
+              <label for="subscribe"></label>
+              <input type="button" value="SUBSCRIBE" class="
+              readMore">
+            </form>
+          </div><!-- /.subscribeContainer -->
+          
+          <div class="contactContainer">
+            <div class="contactTxt">
+              <h4>Contact</h4>
+              <div class="info">
+                <p>info@email.com</p>
+                <p>123-456-7890</p>
+                <p>123 some road, Toronto, ON</p>
+                <p>A5A 5A5, Canada</p>
+              </div>
+            </div><!-- /.contactTxt -->
+            <nav class="contactNav">
+              <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">contact</a></li>
+              </ul>
+            </nav><!-- /.contactNav -->
+          </div><!-- /.contactContainer -->
+        </div><!-- /.contactFlex -->
       </div><!-- /.wrapper -->
     </section>
 <!-- /.contact -->
