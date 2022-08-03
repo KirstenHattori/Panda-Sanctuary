@@ -181,10 +181,15 @@ h2 {
 }
 
 @media (max-width: 540px) {
-  .actions ul{
+  .actionsContainer{
     display: flex;
     flex-direction: column;
   }
+
+  li {
+    padding: 20px 0;
+  }
+
 }
 
 // CONTACT
