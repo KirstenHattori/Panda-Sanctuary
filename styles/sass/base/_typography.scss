@@ -28,17 +28,26 @@ h2 {
   }
 }
 
+h2 {
+  margin: 20px 0;
+  line-height: normal;
+
+  @media (max-width: 700px) {
+    text-align: center;
+  }
+
+  &.left {
+    @media (max-width: 700px) {
+      text-align: left;
+    }
+  }
+}
+
 h3 {
   font-family: $offside;
   font-weight: 400;
   color: $deepGreen;
-}
-
-h4,
-.contactNav a {
-  font-family: $offside;
-  font-weight: 400;
-  color: $white;
+  margin-top: 20px;
 }
 
 @media (max-width: 400px) {
@@ -47,6 +56,13 @@ h4,
   h3 {
     font-size: 1.5rem;
   }
+}
+
+h4,
+.contactNav a {
+  font-family: $offside;
+  font-weight: 400;
+  color: $white;
 }
 
 p,
