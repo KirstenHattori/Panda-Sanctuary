@@ -24,6 +24,9 @@ a {
   display: inline-block;
   /* inline is the default and it would not understand height (top and bottom padding or margin) */
 }
+i {
+  display: inline-block;
+}
 
 img {
   max-width: 100%;

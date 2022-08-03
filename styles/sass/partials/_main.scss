@@ -4,6 +4,10 @@ section {
 
 h2 {
   margin: 20px 0;
+
+  @media (max-width: 540px) {
+    text-align: center;
+  }
 }
 
 // background colors
@@ -79,6 +83,11 @@ h2 {
     padding: 0;
     margin-left: 28%;
     width: 75%;
+
+    @media (max-width: 540px) {
+      margin-left: 0;
+      width: 100%;
+    }
   }
 }
 
@@ -97,7 +106,7 @@ h2 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 540px) {
   .gallery {
     li {
       width: 47%;
@@ -115,14 +124,27 @@ h2 {
 
 
 // BLOG
+.blog {
+  padding: 0;
+}
 .blogList {
+  .flexContainer {
+    position: relative;
+  }
+  .txtContainer {
+    padding-top: 0;
+  }
+  .fullBleed {
+    width: 50vw;
+    max-width: 50vw;
+  }
+
   li:first-child {
     .fullBleed {
       position: relative;
       // left: 50%;
       // right: 25%;
-      width: 50vw;
-      max-width: 50vw;
+
       left: 50%;
       right: 50%;
       margin-left: -50vw;
@@ -135,8 +157,7 @@ h2 {
       position: relative;
       // left: 50%;
       // right: 25%;
-      width: 50vw;
-      max-width: 50vw;
+
       // left: 0%;
       // right: 0%;
       // margin-left: 50vw;
@@ -161,7 +182,7 @@ h2 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 540px) {
   .actions ul{
     display: flex;
     flex-direction: column;
@@ -226,7 +247,7 @@ h2 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 540px) {
   .wrapper {
     width: 90%;
   }

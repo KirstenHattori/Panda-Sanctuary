@@ -249,6 +249,10 @@ a {
   /* inline is the default and it would not understand height (top and bottom padding or margin) */
 }
 
+i {
+  display: inline-block;
+}
+
 img {
   max-width: 100%;
 }
@@ -337,7 +341,7 @@ nav {
   background-color: rbga(0, 0, 0, 0);
   position: fixed;
   z-index: 999;
-  top: 0;
+  top: 10px;
   width: 100%;
 }
 nav span.logo {
@@ -354,6 +358,17 @@ nav .topNav {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+nav .bars {
+  display: none;
+}
+@media (max-width: 540px) {
+  nav .bars {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+}
 nav ul.pageAnchors {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,11 +380,15 @@ nav ul.pageAnchors {
 nav ul.pageAnchors a {
   padding-left: 40px;
 }
+@media (max-width: 540px) {
+  nav ul.pageAnchors {
+    display: none;
+  }
+}
 
 header {
   background-image: url("../assets/header-image.png");
   height: 100vh;
-  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -399,12 +418,28 @@ h1 {
           flex-direction: column;
 }
 
+@media (max-width: 400px) {
+  header {
+    height: 60vh;
+  }
+  h1 {
+    line-height: 1.7rem;
+  }
+  .socials li {
+    display: none;
+  }
+}
 section {
   padding: 20vh 0;
 }
 
 h2 {
   margin: 20px 0;
+}
+@media (max-width: 540px) {
+  h2 {
+    text-align: center;
+  }
 }
 
 .about,
@@ -483,6 +518,12 @@ h2 {
   margin-left: 28%;
   width: 75%;
 }
+@media (max-width: 540px) {
+  .aboutContainer .aboutTxt {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 
 .gallery {
   display: -webkit-box;
@@ -498,7 +539,7 @@ h2 {
   width: 31%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 540px) {
   .gallery li {
     width: 47%;
   }
@@ -509,10 +550,22 @@ h2 {
     display: none;
   }
 }
-.blogList li:first-child .fullBleed {
+.blog {
+  padding: 0;
+}
+
+.blogList .flexContainer {
   position: relative;
+}
+.blogList .txtContainer {
+  padding-top: 0;
+}
+.blogList .fullBleed {
   width: 50vw;
   max-width: 50vw;
+}
+.blogList li:first-child .fullBleed {
+  position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -526,8 +579,6 @@ h2 {
 }
 .blogList li:last-child .fullBleed {
   position: relative;
-  width: 50vw;
-  max-width: 50vw;
 }
 
 .actions {
@@ -541,7 +592,7 @@ h2 {
       justify-content: space-around;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 540px) {
   .actions ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -631,7 +682,7 @@ h2 {
   display: inline-block;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 540px) {
   .wrapper {
     width: 90%;
   }

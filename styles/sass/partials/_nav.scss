@@ -7,7 +7,7 @@ nav {
   background-color: rbga(0,0,0,0);
   position: fixed;
   z-index: 999;
-  top: 0;
+  top: 10px;
   width: 100%;
   // max-width: 1080px;
   // display: flex;
@@ -33,13 +33,26 @@ nav {
   //   display: flex;
   //   // justify-content: flex-end;
   // }
+    .bars {
+      display: none;
 
+      @media (max-width: 540px) {
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        color: white;
+      }
+    }
   ul.pageAnchors {
     display: flex;
     justify-content: space-between;
 
     a {
       padding-left: 40px;
+    }
+    
+    @media (max-width: 540px) {
+      display: none;
     }
   }
 }

@@ -1,7 +1,6 @@
 header {
   background-image: url("../assets/header-image.png");
   height: 100vh;
-  background-size: contain;
   // position: relative;
   // top: 0;
   background-position: center;
@@ -9,21 +8,11 @@ header {
   background-size: cover;
 }
 
-
-// h1 {
-//   font-family: $barlow;
-//   font-weight: 400;
-//   font-size: 3.44rem;
-//   line-height: 63.7px;
-//   letter-spacing: 0.8px;
-//   color: $white;
-// }
-
 h1 {
   width: 50%;
   position: relative;
   top: 100px;
-    line-height: 63.7px;
+  line-height: 63.7px;
   // line-break: normal;
   // line-height: 1.5rem;
 }
@@ -36,4 +25,19 @@ h1 {
   right: 0;
   display: flex;
   flex-direction: column;
+}
+
+
+@media (max-width: 400px) {
+  header {
+    height: 60vh;
+  }
+
+  h1 {
+    line-height: 1.7rem;
+  }
+
+  .socials li {
+    display: none;
+  }
 }
